@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "842503277654",
+    "project_id": "fastorder-f7ce0",
+    "storage_bucket": "fastorder-f7ce0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842503277654:android:41b656d7cb0e8bebc5fff7",
+        "android_client_info": {
+          "package_name": "com.example.fastorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842503277654-3dsr0hgt28701nneasspi6jn35ibu7ur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKlTzt_EYJncgn525jmhYcqsMvRqyN3gA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842503277654-3dsr0hgt28701nneasspi6jn35ibu7ur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Intentionally identical to values/colors.xml.
+         Brand identity should stay constant across light and dark mode -
+         Zomato and Zepto do not re-colour their launch screen either. -->
+    <color name="brand_primary">#FFFFC531</color>
+    <color name="splash_background">#FF2E0F4F</color>
+    <color name="splash_on_background">#FFF3E9FF</color>
+</resources>
+
+

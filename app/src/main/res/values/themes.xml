@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.FastOrder" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!--
+      Launch theme. This is the theme the activity starts with; the
+      SplashScreen library swaps over to Theme.FastOrder via postSplashScreenTheme
+      as soon as installSplashScreen() runs in MainActivity.
+    -->
+    <style name="Theme.FastOrder.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.FastOrder</item>
+    </style>
+</resources>
