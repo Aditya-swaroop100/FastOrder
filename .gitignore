@@ -1,15 +1,85 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# ---------------------------------------------------------------
+# Built application files
+# ---------------------------------------------------------------
+*.apk
+*.aab
+*.aar
+*.ap_
+*.dex
+*.class
+
+# ---------------------------------------------------------------
+# Build output
+# ---------------------------------------------------------------
+.gradle/
+build/
+**/build/
+bin/
+gen/
+out/
+release/
+captures/
+
+# ---------------------------------------------------------------
+# Local / machine-specific config - never commit
+# ---------------------------------------------------------------
 local.properties
+*.iml
+
+# ---------------------------------------------------------------
+# Signing material - NEVER commit these
+# ---------------------------------------------------------------
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+
+# ---------------------------------------------------------------
+# IDE
+# ---------------------------------------------------------------
+.idea/
+
+# ---------------------------------------------------------------
+# Kotlin / native build
+# ---------------------------------------------------------------
+.kotlin/
+.externalNativeBuild/
+.cxx/
+
+# ---------------------------------------------------------------
+# Firebase
+#
+# NOTE: app/google-services.json is intentionally committed. It contains
+# identifiers (project ID, app ID, API key), not credentials - the same values
+# ship inside every published APK and can be extracted from it. Access is
+# controlled by Firestore Security Rules, App Check, and API key restrictions,
+# not by keeping this file private. Uncomment the line below if you would
+# rather keep it out of the repo and inject it in CI instead.
+# ---------------------------------------------------------------
+# app/google-services.json
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+firestore-debug.log
+database-debug.log
+ui-debug.log
+
+# ---------------------------------------------------------------
+# Lint
+# ---------------------------------------------------------------
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+lint/reports/
+
+# ---------------------------------------------------------------
+# OS noise
+# ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------
+# Logs
+# ---------------------------------------------------------------
+*.log
