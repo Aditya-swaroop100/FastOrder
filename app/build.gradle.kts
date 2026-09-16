@@ -1,3 +1,5 @@
+import com.google.firebase.crashlytics.buildtools.gradle.CrashlyticsExtension
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
@@ -26,6 +28,11 @@ android {
         release {
             optimization {
                 enable = true
+            }
+            // R8 is on for release, so stack traces reaching Crashlytics are
+            // obfuscated unless the mapping file is uploaded alongside the build.
+            configure<CrashlyticsExtension> {
+                mappingFileUploadEnabled = true
             }
         }
     }
