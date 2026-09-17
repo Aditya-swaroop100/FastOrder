@@ -16,4 +16,9 @@
     <color name="brand_primary">#FFFFC531</color>
     <color name="splash_background">#FF2E0F4F</color>
     <color name="splash_on_background">#FFF3E9FF</color>
+
+    <!-- Window background behind Compose. Matches colorScheme.surface so
+         the gap between the splash exiting and the first Compose frame is
+         the app's own colour rather than a white flash. -->
+    <color name="window_background">#FFFDFBFF</color>
 </resources>

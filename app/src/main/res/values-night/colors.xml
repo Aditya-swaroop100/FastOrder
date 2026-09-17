@@ -6,6 +6,9 @@
     <color name="brand_primary">#FFFFC531</color>
     <color name="splash_background">#FF2E0F4F</color>
     <color name="splash_on_background">#FFF3E9FF</color>
+
+    <!-- Matches the dark colorScheme.surface. -->
+    <color name="window_background">#FF151218</color>
 </resources>
 
 
