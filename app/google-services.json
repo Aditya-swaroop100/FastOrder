@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "842503277654-64imfnu7blu7j5gvm3h900d6qflcr5r8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fastorder",
+            "certificate_hash": "4d76177a50ed7221bdb50b6a3db70004bb5a2c42"
+          }
+        },
+        {
           "client_id": "842503277654-3dsr0hgt28701nneasspi6jn35ibu7ur.apps.googleusercontent.com",
           "client_type": 3
         }

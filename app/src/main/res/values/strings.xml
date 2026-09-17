@@ -3,4 +3,64 @@
     <!-- Brand punchline. Leans on the differentiator: paste a recipe link,
          get the ingredients delivered. -->
     <string name="splash_tagline">From reel to meal, in minutes</string>
+
+    <!-- ============================ Sign-in ============================ -->
+    <string name="sign_in_title">Welcome to FastOrder</string>
+    <string name="sign_in_subtitle">Sign in to save your cart and track orders</string>
+    <string name="sign_in_with_google">Continue with Google</string>
+    <string name="sign_in_with_phone">Continue with phone number</string>
+    <string name="sign_in_divider">or</string>
+    <string name="sign_in_back">Back</string>
+    <!-- Sits under the two sign-in buttons. Placeholder wording until real
+         policy URLs exist; present now so the layout is designed around it
+         rather than having it bolted on at review time. -->
+    <string name="sign_in_legal">By continuing you agree to our Terms of Service and Privacy Policy</string>
+
+    <!-- Phone step -->
+    <string name="sign_in_phone_title">What\'s your number?</string>
+    <string name="sign_in_phone_subtitle">We deliver across India. We\'ll text a 6-digit code to verify your number.</string>
+    <string name="sign_in_phone_dial_code">Code</string>
+    <string name="sign_in_phone_number">Mobile number</string>
+    <!-- Live digit counter under the number field. %1$d typed, %2$d required. -->
+    <string name="sign_in_phone_digits">%1$d / %2$d digits</string>
+    <string name="sign_in_phone_send_code">Send code</string>
+
+    <!-- OTP step. %1$s is the full number in E.164, e.g. +919876543210 -->
+    <string name="sign_in_otp_title">Enter the code</string>
+    <string name="sign_in_otp_subtitle">Sent to %1$s</string>
+    <string name="sign_in_otp_label">6-digit code</string>
+    <string name="sign_in_otp_verify">Verify</string>
+    <string name="sign_in_otp_resend">Resend code</string>
+    <!-- %1$d is seconds remaining on the resend cooldown -->
+    <string name="sign_in_otp_resend_in">Resend code in %1$ds</string>
+    <string name="sign_in_otp_wrong_number">Wrong number?</string>
+    <!-- Toast shown when Play services read the SMS and filled the field. -->
+    <string name="sign_in_otp_auto_filled">Code detected automatically</string>
+
+    <!-- ========================= Sign-in errors =========================
+         One string per AuthError case. Each says what happened *and* what the
+         user can do next; "Something went wrong" with no next step is what
+         generates support tickets. -->
+    <string name="auth_error_no_credential">No Google account is available on this device. Try adding one in Settings, or continue with your phone number instead.</string>
+    <string name="auth_error_network">Can\'t reach the network. Check your connection and try again.</string>
+    <!-- Deliberately not phrased as a connection problem: this fires when a
+         request was accepted and then never answered, where telling the user to
+         check their network sends them to fix something that wasn't broken. -->
+    <string name="auth_error_verification_timeout">That took too long. Please try sending the code again.</string>
+    <string name="auth_error_invalid_phone">That doesn\'t look like a valid phone number. Check the country code and try again.</string>
+    <string name="auth_error_invalid_otp">That code isn\'t right. Check the digits and try again.</string>
+    <string name="auth_error_otp_expired">That code has expired. Request a new one to continue.</string>
+    <string name="auth_error_too_many_requests">Too many attempts. Wait a few minutes before trying again.</string>
+    <string name="auth_error_provider_disabled">This sign-in method isn\'t available right now. Please try another one.</string>
+    <string name="auth_error_account_disabled">This account has been disabled. Contact support if you think that\'s a mistake.</string>
+    <string name="auth_error_credential_in_use">That account is already linked to a different FastOrder profile.</string>
+    <!-- Deliberately vague to the user: the real cause is almost always a
+         missing SHA fingerprint in the Firebase console, which is a developer
+         problem and not something the user can act on. -->
+    <string name="auth_error_app_verification">We couldn\'t verify this app installation. Try again, or reinstall from the Play Store.</string>
+    <string name="auth_error_unknown">Something went wrong signing you in. Please try again.</string>
+
+    <!-- ============================== Home ============================== -->
+    <string name="home_signed_in_as">Signed in as %1$s</string>
+    <string name="home_sign_out">Sign out</string>
 </resources>

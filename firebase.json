@@ -1,2 +1,11 @@
-{}
+{
+  "auth": {
+    "providers": {
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "FastOrder",
+        "supportEmail": "ad@fastenal.com"
+      }
+    }
+  }
+}
 

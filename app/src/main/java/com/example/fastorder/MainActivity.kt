@@ -19,6 +19,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.fastorder.ui.navigation.FastOrderNavHost
 import com.example.fastorder.ui.screens.BrandSplashScreen
 import com.example.fastorder.ui.theme.FastOrderTheme
+import dagger.hilt.android.AndroidEntryPoint
 
 /**
  * The app's single Activity.
@@ -28,7 +29,12 @@ import com.example.fastorder.ui.theme.FastOrderTheme
  * since Android 12 the system already draws a splash on every cold start, so a
  * second splash Activity would show two in a row, and extra Activities
  * fragment the back stack and complicate deep links.
+ *
+ * `@AndroidEntryPoint` is what makes `by viewModels()` below able to resolve a
+ * `@HiltViewModel` - the annotation generates a base class that installs Hilt's
+ * ViewModel factory as the Activity's default.
  */
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     /**
