@@ -5,4 +5,9 @@ plugins {
     alias(libs.plugins.kotlin.serialization) apply false
     alias(libs.plugins.google.services) apply false
     alias(libs.plugins.firebase.crashlytics) apply false
+    // Declared here, applied in :app. Hilt's Gradle plugin needs KSP on the
+    // classpath of the module it runs in, so the two always travel together.
+    alias(libs.plugins.ksp) apply false
+    alias(libs.plugins.hilt) apply false
 }
+

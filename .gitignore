@@ -83,3 +83,15 @@ Thumbs.db
 # Logs
 # ---------------------------------------------------------------
 *.log
+
+# ---------------------------------------------------------------
+# Sentry
+#
+# The DSN is NOT secret (it ships in every APK and only grants permission
+# to write events), so it lives in local.properties purely to keep it
+# account-specific rather than hard-coded. Auth tokens ARE secret - they
+# grant org-wide upload rights - so never commit sentry.properties.
+# ---------------------------------------------------------------
+sentry-wizard
+sentry.properties
+.sentryclirc

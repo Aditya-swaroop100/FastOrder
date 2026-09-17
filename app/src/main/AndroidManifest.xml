@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".FastOrderApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,6 +17,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FastOrder">
+
+        <!--
+          Sentry ships a ContentProvider that auto-initialises the SDK from
+          manifest meta-data before Application.onCreate(). It is turned off
+          here so FastOrderApplication can initialise it in code instead: the
+          free-plan quota settings (tracing, replay and attachments all off)
+          must be in place for the very first event, and the DSN comes from
+          BuildConfig rather than being hard-coded into this file.
+        -->
+        <meta-data
+            android:name="io.sentry.auto-init"
+            android:value="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
